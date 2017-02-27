@@ -88,8 +88,11 @@ How Deployer works
 Deployer makes use of three directories on the server:
 
 releases - contains a number of releases (by default 3).
+
 current - symlink to latest release.
+
 shared - this directory contains files/dirs that are shared between releases.
+
 When the deploy script is run, a new release is created on the server. When the deployment has been completed successfully, the symlink current is updated to point to the latest release.
 
 Recipes
